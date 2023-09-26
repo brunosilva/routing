@@ -18,7 +18,7 @@ function App() {
           <Button path="/projects" label="Repositories" />
         </GridSC>
       </ContainerHeaderSC>
-      <ContainerBodySC>
+      <ContainerBodySC border={true} >
         <Outlet />
       </ContainerBodySC>
     </ContainerAppSC>

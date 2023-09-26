@@ -11,7 +11,11 @@ export const ContainerHeaderSC = styled.div`
   margin-bottom: 1.5rem;
 `;
 
-export const ContainerBodySC = styled.div`
+interface IProps {
+  border: boolean;
+}
+
+export const ContainerBodySC = styled.div<IProps>`
   padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: ${(props: { border: boolean; }) => (props.border === true ? '1px solid rgba(var(--callout-border-rgb), 0.3)' : '0')};
